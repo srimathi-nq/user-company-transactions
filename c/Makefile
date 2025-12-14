@@ -1,6 +1,6 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c11
-LDFLAGS = -lsqlite3
+CC = C:/msys64/ucrt64/bin/gcc.exe
+CFLAGS  = -Wall -Wextra -std=c11 -g
+LDFLAGS = -fno-lto -lsqlite3
 TARGET = app
 SOURCES = main.c database.c crud.c
 OBJECTS = $(SOURCES:.c=.o)
